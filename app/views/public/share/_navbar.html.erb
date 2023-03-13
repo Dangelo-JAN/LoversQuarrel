@@ -1,0 +1,27 @@
+<nav>
+  <div>
+    <button>
+      <span>Lovers Quarrel</span>
+    </button>
+
+    <div>
+      <%= link_to "Forum", root_path %>
+      <ul>
+        <li>
+          <%= link_to "Post", posts_path %>
+        </li>
+
+      </ul>
+
+      <div>
+        <% if !current_user %>
+          <%= link_to "Log In", new_user_session_path, class: "nav-item nav-link" %>
+          <%= link_to "Sign Up", new_user_registration_path, class: "nav-item nav-link ms-4" %>
+        <% else %>
+
+          <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</nav>

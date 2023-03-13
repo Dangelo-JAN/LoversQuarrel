@@ -7,6 +7,7 @@ gem 'devise', '~> 4.9'
 gem 'devise-jwt', '~> 0.10.0'
 gem 'rack-cors', '~> 2.0'
 gem 'noticed', '~> 1.6'
+gem 'administrate', '~> 0.18.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
