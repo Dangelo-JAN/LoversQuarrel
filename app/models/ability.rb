@@ -28,5 +28,14 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/blob/develop/docs/define_check_abilities.md
+
+
+
+    # return unless user.present?
+
+    # can :create, Discussion
+    # can(%i[update destroy], Discussion, user:)
+    # can :create, Post
+    # can %i[update destroy], Post, user:
   end
 end
